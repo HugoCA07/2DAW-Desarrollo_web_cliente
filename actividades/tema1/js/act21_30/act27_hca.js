@@ -107,6 +107,33 @@
     console.log(minnum);
 
     // i:
+    const sumaTotal = nums.reduce((acum, val) => acum + val, 0);
+    const media = sumaTotal / nums.length;
 
+    const porEncima = nums.filter((val) => val > media);
+    const porDebajo = nums.filter((val) => val < media);
+
+    console.log(`La media es: ${Math.round(media * 100) / 100}`);
+    console.log(`Por encima de la media: [${porEncima.join(", ")}]`);
+    console.log(`Por debajo de la media: [${porDebajo.join(", ")}]`);
+
+    // j:
+    const ordenAscendente = [...nums].sort((a, b) => a - b);
     
+    const ordenDescendente = [...nums].sort((a, b) => b - a);
+
+    console.log(`De mayor a menor: [${ordenDescendente.join(", ")}]`);
+    console.log(`De menor a mayor: [${ordenAscendente.join(", ")}]`);
+
+    // k:
+    const valorBuscado = parseInt(
+        prompt("Introduce el número que quieres buscar:"),
+        10,
+    );
+
+    if (nums.includes(valorBuscado)) {
+        console.log(`El número ${valorBuscado} SÍ existe en el vector.`);
+    } else {
+        console.log(`El número ${valorBuscado} NO existe en el vector.`);
+    }
 }
