@@ -6,4 +6,6 @@
 
         return array.map((numero) => numero * numero);
     }
+
+    console.table(elevarAlCuadrado([2,6,9,10]));
 }

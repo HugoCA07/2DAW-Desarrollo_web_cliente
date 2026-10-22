@@ -8,7 +8,7 @@
         }
 
         const partes = fechaTexto.split("/");
-        const diaNacimiento = parseInt(partes[0], 10);
+        const diaNacimiento = parseInt(partes[0], 10); // El 10 como segundo param es para indicarle que es decimal, si no a veces te lo pone en ASCII y cosas raras
         const mesNacimiento = parseInt(partes[1], 10);
         const anioNacimiento = parseInt(partes[2], 10);
 
@@ -28,5 +28,5 @@
         return edad;
     }
 
-    console.log(calcularEdad("23/04/1995"));
+    console.log(calcularEdad("20/12/2007"));
 }
