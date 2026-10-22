@@ -127,9 +127,7 @@
 
     // k:
     const valorBuscado = parseInt(
-        prompt("Introduce el número que quieres buscar:"),
-        10,
-    );
+        prompt("Introduce el número que quieres buscar:"),10,);
 
     if (nums.includes(valorBuscado)) {
         console.log(`El número ${valorBuscado} SÍ existe en el vector.`);
