@@ -18,6 +18,7 @@
         }, [0, 0])
 
 
+        // MENOS OPTIMO
         // for (let i = 0; i < cadena.length; i++) {
         //     let letra = cadena[i];
 

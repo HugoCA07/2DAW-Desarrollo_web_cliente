@@ -10,4 +10,6 @@
 
         return [maximo, minimo];
     }
+
+    console.table(obtenerMayorMenor([1,5,7,8,12,99,6,7,8,1]));
 }

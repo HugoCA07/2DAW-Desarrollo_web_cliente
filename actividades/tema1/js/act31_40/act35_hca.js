@@ -6,4 +6,6 @@
 
         return array.map((numero) => Math.pow(numero,2));
     }
+
+    console.table(elevarAlCuadrado([2,6,9,10]));
 }
