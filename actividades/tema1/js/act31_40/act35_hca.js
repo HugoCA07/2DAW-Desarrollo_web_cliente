@@ -4,6 +4,6 @@
     function elevarAlCuadrado(array) {
         if (!Array.isArray(array)) return "Debes ingresar un array";
 
-        return array.map((numero) => numero * numero);
+        return array.map((numero) => Math.pow(numero,2));
     }
 }
