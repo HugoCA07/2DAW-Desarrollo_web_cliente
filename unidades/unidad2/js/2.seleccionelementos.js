@@ -39,4 +39,29 @@
 
     let elementociclomotor = document.getElementById("idCiclomotores");
     console.log(elementociclomotor);
+    console.log(elementociclomotor.textContent);
+
+    console.log("====== QUERYSELECTOR ======");
+    let elemento = document.querySelector("#idCoches"); // id (#) o class (.)
+    console.log(elemento);
+
+    elemento = document.querySelector(".cListaVehiculos");
+    console.log(elemento);
+
+    elemento = document.querySelector("ul");
+    console.log(elemento);
+
+    elemento = document.querySelector("p").textContent;
+    console.log(elemento);
+
+    elemento = document.querySelector('[name="nLista"]');
+    console.log(elemento);
+
+    let elementos = document.querySelectorAll('[name="nLista"]');
+    console.log(elementos);
+    console.log("=== Recorrido con Foreach ===");
+    elementos.forEach((elem) => {
+        console.log(elem);
+        console.log(elem.textContent);
+    })
 }
