@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Matrioska</title>
+	<style>
+		.cajapeque{
+			width: 100px;
+			height: 100px;
+			background-color: green;
+            cursor: grab;
+		}
+		.cajamed{
+			width: 200px;
+			height: 200px;
+			background-color: blue;
+			cursor: grab;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+		}
+		.cajagrand{
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+<div class="cajapeque" draggable="true"></div>
+<div class="cajamed" draggable="true"></div>
+<div class="cajagrand" draggable="true"></div>
+<script src="act_matrioska.js"></script>
+</body>
+</html>
