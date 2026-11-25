@@ -26,8 +26,9 @@
 	<br>
 	
 	<label for="idTextArea1">Text Area</label>
-	<textarea id="idTextArea1" name="nTextArea1" rows="10" cols="20" placeholder="Escribe lo que te de la gana"></textarea>
-
+	<textarea id="idTextArea1" name="nTextArea1" rows="10" cols="20"
+	          placeholder="Escribe lo que te de la gana"></textarea>
+	
 	<br>
 	<br>
 	
@@ -36,6 +37,45 @@
 	</label>
 	<label for="idRadiobtn2">No
 		<input type="radio" id="idRadiobtn2" name="nRadiobtns" value="no">
+	</label>
+	
+	<br>
+	<br>
+	
+	<label for="idCheck1">Bocadillo</label>
+	<input type="checkbox" id="idCheck1" name="comidas" value="bocadillo">
+	<br>
+	<label for="idCheck2">Fruta</label>
+	<input type="checkbox" id="idCheck2" name="comidas" value="fruta">
+	<br>
+	<label for="idCheck3">Pastelito</label>
+	<input type="checkbox" id="idCheck3" name="comidas" value="pastelito" checked="checked">
+	
+	<br>
+	<br>
+	
+	<label for="idLenguajes">Elige un lenguaje
+		<select id="idLenguajes">
+			<option value="0" disabled selected>Seleccione una opcion</option>
+			<option value="1">Javascript</option>
+			<option value="2">C++</option>
+			<option value="3">C</option>
+			<option value="4">Rust</option>
+			<option value="5">PHP</option>
+		</select>
+	</label>
+
+	<br>
+	<br>
+	
+	<label>
+		<input type="text" list="idFrutas" id="idFrutas1">
+		<datalist id="idFrutas">
+			<option value="1">Sandía</option>
+			<option value="2">Melón</option>
+			<option value="3">Manzana</option>
+			<option value="4">Aguacate</option>
+		</datalist>
 	</label>
 </form>
 

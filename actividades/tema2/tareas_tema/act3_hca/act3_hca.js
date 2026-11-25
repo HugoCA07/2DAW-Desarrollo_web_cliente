@@ -75,7 +75,7 @@ for (let i = 0; i < checkboxesNum; i++) {
 
     let checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
-    checkbox.setAttribute("value", randomNum);
+    checkbox.setAttribute("value", randomNum.toString());
     checkbox.setAttribute("id", `checkbox-${i}`);
     checkbox.setAttribute("class", "checknormal");
 
@@ -84,7 +84,7 @@ for (let i = 0; i < checkboxesNum; i++) {
     });
 
     let label = document.createElement("label");
-    label.textContent = i + 1;
+    label.textContent = (i + 1).toString();
     label.appendChild(checkbox);
 
     document.body.appendChild(label);

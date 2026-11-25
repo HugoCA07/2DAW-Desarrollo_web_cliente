@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios explicacion 2</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+        }
+		.container-form {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: lightgray;
+			padding: 2rem;
+		}
+		button {
+			border: none;
+			outline: none;
+			color: white;
+			cursor: pointer;
+			background-color: black;
+			border-radius: 0.25rem;
+			padding: 0.5rem;
+		}
+        .error {
+            color: red;
+            display: block;
+            margin-top: 0.25rem;
+        }
+	</style>
+</head>
+<body>
+
+<div class="container-form">
+	<form method="post" action="https://formsubmit.co/hcruara245@g.educaand.es" id="idForm">
+		<label for="idTexto">Texto:</label>
+		<br>
+		<input type="text" id="idTexto" name="nTexto">
+		
+		<hr>
+		
+		<label for="idEmail">Email:</label>
+		<br>
+		<input type="email" id="idEmail" name="nEmail">
+		
+		<hr>
+		
+		<label for="idPassword">Contraseña:</label>
+		<br>
+		<input type="password" id="idPassword" name="nPassword" minlength="4" maxlength="8">
+		
+		<hr>
+		
+		<button type="submit" id="idBtnEnviar">Enviar</button>
+	</form>
+</div>
+
+<script src="js/13.formularios2.js"></script>
+
+</body>
+</html>
